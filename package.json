@@ -1,0 +1,10 @@
+{
+    "name": "node-server",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Jacob Lettie",
+    "scripts": {
+        "start": "node app.js"
+    }
+}
