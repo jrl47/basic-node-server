@@ -12,9 +12,9 @@ http.createServer((request, response) => {
 
     let filePath = '.' + request.url;
     if (filePath == './' || filePath == './?authuser=0' /* for google's Web Preview feature */) {
-        filePath = './src/index.html';
+        filePath = './index.html';
     } else {
-        filePath = './src' + request.url;
+        filePath = '.' + request.url;
     }
 
     let extname = String(path.extname(filePath)).toLowerCase();
